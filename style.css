@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+}
+
+a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+}
+
+/* variable des couleur */
+
+:root {
+    --couleur-fond-foncer:#1E2A78;
+    --couleur-fond-clair:#4753A3;
+    --couleur-objet-foncer:#4B3B8F;
+    --couleur-objet-clair:#7D5FFF;
+    --couleur-texte:#F4F4F9;
+}
+
+
+/* permet de mettre tout les element sur toute la page */
+
+body {
+    display: flex ; /* pour activer flex */
+    height: 100vh ; /* pour prendre tout la place de la fenetre */
+    flex-direction: column; /* pour mettre les element en colum */
+    justify-content: space-between; /* repartit l'espace entre les element le premier en haut le dernier en bas */
+    font-family: Arial, sans-serif;
+    background-color:var(--couleur-fond-foncer);
+}
+
+.boutton_end {
+    margin: 10px 10px;
+}
+
+.bannier {
+    background-color: var(--couleur-fond-clair);
+    border-radius: 50px;
+    padding: 25px 25px;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 500px;
+    font-style: italic;
+    font-weight: 900; 
+    font-family: Arial, sans-serif; /* permet deviter les souci avec la polisse d'ecriture */
+    color:var(--couleur-texte)
+}
+
+
+/* bouton de demarage */
+
+header {
+    text-align: center;   
+}
+
+button {
+    background-color: var(--couleur-objet-clair);
+    color: var(--couleur-texte);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    gap: 20px; /* Espacement entre colonnes */
+    justify-content: center;
+    color:var(--couleur-texte)
+}
+
+.colonne {
+    flex: 1;
+}
+
+h2 {
+    margin: 25px;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    color:var(--couleur-texte)
+}
+
+
+/* taille des image */
+
+img {
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 100%;
+}
+
+
+/* pour espacer de 200 pixel les logo du fon du site */
+
+.lien-icone {
+  margin-left: 200px; 
+}
