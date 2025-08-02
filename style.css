@@ -32,6 +32,14 @@ body {
     background-color:var(--fond-principal);
 }
 
+button:hover {
+    color: var(--objet-survol);
+}
+
+button:active {
+    color: var(--objet-clic);
+}
+
 .boutton_end {
     margin: 25px;
 }
@@ -59,7 +67,7 @@ header {
 }
 
 button {
-    background-color: var(--objet-permanent);
+    background-color: var(--texte-lien);
     color: var(--texte-titre);
     text-decoration: none;
     padding: 10px;
