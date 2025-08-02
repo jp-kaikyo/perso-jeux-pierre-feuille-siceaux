@@ -10,13 +10,16 @@ a {
 /* variable des couleur */
 
 :root {
-    --couleur-fond-foncer:#1E2A78;
-    --couleur-fond-clair:#4753A3;
-    --couleur-objet-foncer:#4B3B8F;
-    --couleur-objet-clair:#7D5FFF;
-    --couleur-texte:#F4F4F9;
+    --fond-principal:#0F0F0F;
+    --font-contenu:#1A1A1A;
+    --font-contours:#2E2E2E;
+    --texte-titre:#ffffff;
+    --texte-courant:#d1d1d1;
+    --texte-lien:#8f8f8f;
+    --objet-survol:#6E40C9;
+    --objet-permanent:#8B5CF6; 
+    --objet-clic:#9B6DED;
 }
-
 
 /* permet de mettre tout les element sur toute la page */
 
@@ -26,15 +29,15 @@ body {
     flex-direction: column; /* pour mettre les element en colum */
     justify-content: space-between; /* repartit l'espace entre les element le premier en haut le dernier en bas */
     font-family: Arial, sans-serif;
-    background-color:var(--couleur-fond-foncer);
+    background-color:var(--fond-principal);
 }
 
 .boutton_end {
-    margin: 10px 10px;
+    margin: 25px;
 }
 
 .bannier {
-    background-color: var(--couleur-fond-clair);
+    background-color: var(--font-contenu);
     border-radius: 50px;
     padding: 25px 25px;
 }
@@ -45,7 +48,7 @@ h1 {
     font-style: italic;
     font-weight: 900; 
     font-family: Arial, sans-serif; /* permet deviter les souci avec la polisse d'ecriture */
-    color:var(--couleur-texte)
+    color:var(--texte-titre)
 }
 
 
@@ -56,10 +59,17 @@ header {
 }
 
 button {
-    background-color: var(--couleur-objet-clair);
-    color: var(--couleur-texte);
+    background-color: var(--objet-permanent);
+    color: var(--texte-titre);
     text-decoration: none;
     padding: 10px;
+}
+
+h2 {
+    margin: 25px;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    color:var(--texte-titre)
 }
 
 .info {
@@ -67,27 +77,15 @@ button {
     display: flex;
     gap: 20px; /* Espacement entre colonnes */
     justify-content: center;
-    color:var(--couleur-texte)
+    color:var(--texte-courant)
 }
-
-.colonne {
-    flex: 1;
-}
-
-h2 {
-    margin: 25px;
-    font-style: italic;
-    font-family: Arial, sans-serif;
-    color:var(--couleur-texte)
-}
-
 
 /* taille des image */
 
 img {
     max-width: 75px;
     max-height: 75px;
-    border-radius: 100%;
+    border-radius: 50px;
 }
 
 
