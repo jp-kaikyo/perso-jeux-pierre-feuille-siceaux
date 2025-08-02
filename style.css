@@ -7,6 +7,7 @@ a {
   text-decoration: none;
 }
 
+
 /* variable des couleur */
 
 :root {
@@ -20,6 +21,7 @@ a {
     --objet-permanent:#8B5CF6; 
     --objet-clic:#9B6DED;
 }
+
 
 /* permet de mettre tout les element sur toute la page */
 
@@ -83,10 +85,11 @@ h2 {
 .info {
     text-align: center;
     display: flex;
-    gap: 20px; /* Espacement entre colonnes */
+    gap: 200px; /* Espacement entre colonnes */
     justify-content: center;
     color:var(--texte-courant)
 }
+
 
 /* taille des image */
 
